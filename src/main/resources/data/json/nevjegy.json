@@ -1,0 +1,15 @@
+{
+  "nev": "Hajdu Vendeglo",
+  "nyitvaTartas": "8:00 - 20:00",
+  "leiras": "Megnyitott az etterem 2009 ota!",
+  "elerhetoseg": {
+    "email": "hajduvendeglo@hajduvendeglo.hu",
+    "mobil": "+36202524411",
+    "cim": {
+      "orszag": "Magyarorszag",
+      "varos": "Debrecen",
+      "utca": "Kishegyesi ut",
+      "hazSzam": 255
+    }
+  }
+}

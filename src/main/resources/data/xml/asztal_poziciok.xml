@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<poziciok>
+    <pozicio asztalID="30" szobaID="1">
+        <x>6</x>
+        <y>4</y>
+    </pozicio>
+    <pozicio asztalID="14" szobaID="1">
+        <x>5</x>
+        <y>2</y>
+    </pozicio>
+    <pozicio asztalID="33" szobaID="1">
+        <x>7</x>
+        <y>6</y>
+    </pozicio>
+    <pozicio asztalID="9" szobaID="1">
+        <x>3</x>
+        <y>2</y>
+    </pozicio>
+    <pozicio asztalID="22" szobaID="1">
+        <x>1</x>
+        <y>2</y>
+    </pozicio>
+    <pozicio asztalID="16" szobaID="1">
+        <x>2</x>
+        <y>4</y>
+    </pozicio>
+    <pozicio asztalID="15" szobaID="1">
+        <x>5</x>
+        <y>6</y>
+    </pozicio>
+    <pozicio asztalID="32" szobaID="1">
+        <x>7</x>
+        <y>2</y>
+    </pozicio>
+    <pozicio asztalID="17" szobaID="1">
+        <x>4</x>
+        <y>4</y>
+    </pozicio>
+    <pozicio asztalID="2" szobaID="1">
+        <x>3</x>
+        <y>6</y>
+    </pozicio>
+    <pozicio asztalID="8" szobaID="1">
+        <x>1</x>
+        <y>6</y>
+    </pozicio>
+    <pozicio asztalID="31" szobaID="2">
+        <x>6</x>
+        <y>7</y>
+    </pozicio>
+    <pozicio asztalID="19" szobaID="2">
+        <x>3</x>
+        <y>4</y>
+    </pozicio>
+    <pozicio asztalID="29" szobaID="2">
+        <x>4</x>
+        <y>8</y>
+    </pozicio>
+    <pozicio asztalID="26" szobaID="2">
+        <x>2</x>
+        <y>6</y>
+    </pozicio>
+    <pozicio asztalID="28" szobaID="2">
+        <x>4</x>
+        <y>6</y>
+    </pozicio>
+    <pozicio asztalID="27" szobaID="2">
+        <x>2</x>
+        <y>8</y>
+    </pozicio>
+    <pozicio asztalID="52" szobaID="2">
+        <x>6</x>
+        <y>3</y>
+    </pozicio>
+    <pozicio asztalID="51" szobaID="2">
+        <x>6</x>
+        <y>2</y>
+    </pozicio>
+    <pozicio asztalID="50" szobaID="2">
+        <x>5</x>
+        <y>3</y>
+    </pozicio>
+    <pozicio asztalID="49" szobaID="2">
+        <x>5</x>
+        <y>2</y>
+    </pozicio>
+    <pozicio asztalID="10" szobaID="2">
+        <x>3</x>
+        <y>1</y>
+    </pozicio>
+    <pozicio asztalID="5" szobaID="2">
+        <x>1</x>
+        <y>1</y>
+    </pozicio>
+    <pozicio asztalID="18" szobaID="2">
+        <x>1</x>
+        <y>4</y>
+    </pozicio>
+    <pozicio asztalID="45" szobaID="3">
+        <x>2</x>
+        <y>9</y>
+    </pozicio>
+    <pozicio asztalID="41" szobaID="3">
+        <x>7</x>
+        <y>9</y>
+    </pozicio>
+    <pozicio asztalID="40" szobaID="3">
+        <x>7</x>
+        <y>7</y>
+    </pozicio>
+    <pozicio asztalID="13" szobaID="3">
+        <x>3</x>
+        <y>5</y>
+    </pozicio>
+    <pozicio asztalID="24" szobaID="3">
+        <x>2</x>
+        <y>3</y>
+    </pozicio>
+    <pozicio asztalID="39" szobaID="3">
+        <x>5</x>
+        <y>9</y>
+    </pozicio>
+    <pozicio asztalID="44" szobaID="3">
+        <x>3</x>
+        <y>8</y>
+    </pozicio>
+    <pozicio asztalID="37" szobaID="3">
+        <x>4</x>
+        <y>3</y>
+    </pozicio>
+    <pozicio asztalID="46" szobaID="3">
+        <x>3</x>
+        <y>9</y>
+    </pozicio>
+    <pozicio asztalID="38" szobaID="3">
+        <x>5</x>
+        <y>7</y>
+    </pozicio>
+    <pozicio asztalID="47" szobaID="3">
+        <x>2</x>
+        <y>7</y>
+    </pozicio>
+    <pozicio asztalID="48" szobaID="3">
+        <x>3</x>
+        <y>7</y>
+    </pozicio>
+    <pozicio asztalID="43" szobaID="3">
+        <x>2</x>
+        <y>8</y>
+    </pozicio>
+    <pozicio asztalID="12" szobaID="3">
+        <x>3</x>
+        <y>1</y>
+    </pozicio>
+    <pozicio asztalID="6" szobaID="3">
+        <x>1</x>
+        <y>1</y>
+    </pozicio>
+    <pozicio asztalID="53" szobaID="3">
+        <x>8</x>
+        <y>2</y>
+    </pozicio>
+    <pozicio asztalID="11" szobaID="3">
+        <x>1</x>
+        <y>5</y>
+    </pozicio>
+    <pozicio asztalID="34" szobaID="4">
+        <x>2</x>
+        <y>1</y>
+    </pozicio>
+    <pozicio asztalID="35" szobaID="4">
+        <x>1</x>
+        <y>3</y>
+    </pozicio>
+    <pozicio asztalID="36" szobaID="4">
+        <x>3</x>
+        <y>3</y>
+    </pozicio>
+</poziciok>

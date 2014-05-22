@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu>
+    <etel kategoria="Főzelék">
+        <nev>Spenót főzelék</nev>
+        <leiras>Ez egy spenót főzelék.</leiras>
+        <ar>2000</ar>
+    </etel>
+    <etel kategoria="Főzelék">
+        <nev>Spárga főzelék</nev>
+        <leiras>Ez egy spárga főzelék.</leiras>
+        <ar>3000</ar>
+    </etel>
+    <etel kategoria="Főzelék">
+        <nev>Borsó főzelék</nev>
+        <leiras>Ez egy borsó főzelék.</leiras>
+        <ar>1000</ar>
+    </etel>
+    <etel kategoria="Tálak">
+        <nev>Hús tál</nev>
+        <leiras>Ez egy húsos tál.</leiras>
+        <ar>2500</ar>
+    </etel>
+    <etel kategoria="Levesek">
+        <nev>Hús leves</nev>
+        <leiras>Ez egy húsos leves.</leiras>
+        <ar>2500</ar>
+    </etel>
+    <etel kategoria="Levesek">
+        <nev>Gomba leves</nev>
+        <leiras>Ez egy gombás leves.</leiras>
+        <ar>1999</ar>
+    </etel>
+    <etel kategoria="Desszert">
+        <nev>Kakaós palacsinta</nev>
+        <leiras>Ez egy kakaós palacsinta.</leiras>
+        <ar>150</ar>
+    </etel>
+    <etel kategoria="Desszert">
+        <nev>Túrós torta</nev>
+        <leiras>Ez egy igen finom torta.</leiras>
+        <ar>450</ar>
+    </etel>    
+</menu>

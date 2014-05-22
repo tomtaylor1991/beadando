@@ -1,0 +1,51 @@
+Ételek és Menü hozzáadása a programhoz
+
+* Bevezetés
+
+  Az alábbi leírás megmutatja hogyan hozhat létre az étteremhez új ételeket reprezentáló xml adatokat, hogy
+  a vásárlók azt is hozzárendelhessék a menüjükhöz.
+
+* Menü - be új Étel létrehozása
+
+** Lépéssorozat
+
+  * Zárja be a programot.
+
+  * Nyissa meg egy szövegszerkesztővel a data/xml/menu.xml fájlt.
+  
+  * Illesszen be egy új <etel> elemet aminek sablon mintája az ez alatti pontban 'Étel elem minta' pontban található.
+
+  * Mentse el a szövegszerkesztővel a fájlt.
+  
+  * Indítsa el a programot és ellenőrizze helyesen vitte be az adatokat. 
+
+
+* Étel elem minta
+
+---
+	<etel kategoria="1.">
+		<nev>2.</nev>
+		leiras>3.</leiras>
+	    <ar>4.</ar>
+	</etel>
+--- 
+
+** Magyarázat
+
+  [[1]] Az étel kategóriája lesz ami majd menü hozzárendeléshor megjelenik lenyíló ablakban csoportosítva az ételeket.
+
+  [[2]] Az étel neve.
+
+  [[3]] Az étel leírása.
+  
+  [[4]] Az étel ára (forintban értendő).	    
+
+* Étel elem minta példa
+
+---
+    <etel kategoria="Főzelék">
+        <nev>Spárga főzelék</nev>
+        <leiras>Ez egy spárga főzelék.</leiras>
+        <ar>3000</ar>
+    </etel>
+--- 

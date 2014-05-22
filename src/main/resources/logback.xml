@@ -1,0 +1,36 @@
+<configuration scan="false">
+
+	<!-- A konzolon minden üzenetet naplózunk -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} %-5level - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="FILEAll" class="ch.qos.logback.core.FileAppender">
+		<file>target/log/all_log.log</file>
+		<append>true</append>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="FILEAll-LATEST" class="ch.qos.logback.core.FileAppender">
+		<file>target/log/latest.log</file>
+		<append>false</append>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+		
+	<root level="ALL">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILEAll"/>
+		<appender-ref ref="FILEAll-LATEST"/>	
+	</root>
+
+	<logger name="my.Main" level="ALL" additivity="false">
+		<appender-ref ref="STDOUT"/>
+	</logger>
+
+</configuration>

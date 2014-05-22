@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<asztalok>
+    <asztal id="30">
+        <szekek_szama>10</szekek_szama>
+    </asztal>
+    <asztal id="14">
+        <szekek_szama>4</szekek_szama>
+    </asztal>
+    <asztal id="33">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="9">
+        <szekek_szama>9</szekek_szama>
+    </asztal>
+    <asztal id="22">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="16">
+        <szekek_szama>6</szekek_szama>
+    </asztal>
+    <asztal id="15">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="32">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="17">
+        <szekek_szama>8</szekek_szama>
+    </asztal>
+    <asztal id="2">
+        <szekek_szama>3</szekek_szama>
+    </asztal>
+    <asztal id="8">
+        <szekek_szama>4</szekek_szama>
+    </asztal>
+    <asztal id="31">
+        <szekek_szama>5</szekek_szama>
+    </asztal>
+    <asztal id="19">
+        <szekek_szama>10</szekek_szama>
+    </asztal>
+    <asztal id="29">
+        <szekek_szama>8</szekek_szama>
+    </asztal>
+    <asztal id="26">
+        <szekek_szama>8</szekek_szama>
+    </asztal>
+    <asztal id="28">
+        <szekek_szama>5</szekek_szama>
+    </asztal>
+    <asztal id="27">
+        <szekek_szama>10</szekek_szama>
+    </asztal>
+    <asztal id="52">
+        <szekek_szama>1</szekek_szama>
+    </asztal>
+    <asztal id="51">
+        <szekek_szama>1</szekek_szama>
+    </asztal>
+    <asztal id="50">
+        <szekek_szama>1</szekek_szama>
+    </asztal>
+    <asztal id="49">
+        <szekek_szama>1</szekek_szama>
+    </asztal>
+    <asztal id="10">
+        <szekek_szama>10</szekek_szama>
+    </asztal>
+    <asztal id="5">
+        <szekek_szama>10</szekek_szama>
+    </asztal>
+    <asztal id="18">
+        <szekek_szama>10</szekek_szama>
+    </asztal>
+    <asztal id="45">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="41">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="40">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="13">
+        <szekek_szama>5</szekek_szama>
+    </asztal>
+    <asztal id="24">
+        <szekek_szama>5</szekek_szama>
+    </asztal>
+    <asztal id="39">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="44">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="37">
+        <szekek_szama>8</szekek_szama>
+    </asztal>
+    <asztal id="46">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="38">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="47">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="48">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="43">
+        <szekek_szama>2</szekek_szama>
+    </asztal>
+    <asztal id="12">
+        <szekek_szama>1</szekek_szama>
+    </asztal>
+    <asztal id="6">
+        <szekek_szama>1</szekek_szama>
+    </asztal>
+    <asztal id="53">
+        <szekek_szama>3</szekek_szama>
+    </asztal>
+    <asztal id="11">
+        <szekek_szama>4</szekek_szama>
+    </asztal>
+    <asztal id="34">
+        <szekek_szama>9</szekek_szama>
+    </asztal>
+    <asztal id="35">
+        <szekek_szama>5</szekek_szama>
+    </asztal>
+    <asztal id="36">
+        <szekek_szama>5</szekek_szama>
+    </asztal>
+</asztalok>

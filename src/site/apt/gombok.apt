@@ -1,0 +1,76 @@
+Magyarázatok röviden, hogy a program bizonyos gombjai mikre valók.
+
+* Bevezetés
+
+  Felsoroljuk az alábbi oldalon a program során előfordulható gombokat, illetve, 
+  hogy azokra kattintva milyen eredményre kell számítani.
+
+* Törli az asztalfoglalást a rendszerből, feltéve hogy ki van jelölve asztal és ott foglalás is van.
+
+[images/icons/1.png] Placeholder image
+
+* Új asztalfoglalást lehet lérehozni ráhattintva, feltéve hogy az asztalnál épp nincs foglalás.
+
+[images/icons/2.png] Placeholder image
+
+* Egy kijelölt asztalfoglaláshoz lehet hozzáadni ételeket vagy módosítani a rendelteken.
+
+[images/icons/3.png] Placeholder image
+
+* Mentést végző gomb, az aktuális ablaknál történt módosításokat elmenti.
+
+[images/icons/5.png] Placeholder image
+
+* Rékattintva bezáródik az aktuális ablak.
+
+[images/icons/6.png] Placeholder image
+
+* Az aktuális ablakban lévő beviteli mezők tartalma kitörlődik ha rákkatintanak erre a gombra.
+
+[images/icons/7.png] Placeholder image
+
+* Az étterem megjelenítő segédrácsozását lehet vele ki és be kapcsolni.
+
+[images/icons/8.png] Placeholder image
+
+* Kijelölt ételt lehet hozzáadni vele az aktuális asztalfoglalásnál.
+
+[images/icons/9.png] Placeholder image
+
+* Kijelölt ételt lehet törölni vele az aktuális asztalfoglalásnál.
+
+[images/icons/10.png] Placeholder image
+
+* Kijelölt asztalt lehet vele törölni a szobatervező ablak használatakor.
+
+[images/icons/11.png] Placeholder image
+
+* Rákattintva bezáródik az aktuális ablak.
+
+[images/icons/12.png] Placeholder image
+
+* Az aktuális asztalfoglaláshoz meg lehet nézni a végösszeget és be is lehet fizetni.
+
+[images/icons/13.png] Placeholder image
+
+* Étterem elrendezés tervező ablak nyílik meg ha rákattintanak, ahol asztalok elhelyezkedését lehet definiálni.
+
+[images/icons/14.png] Placeholder image
+
+* A kijelölt üres helyre lehet új asztalt létrehozni az Elrendezés tervező ablakon belül.
+
+[images/icons/15.png] Placeholder image
+
+* Az étterem napi árbevételét lehet megtekinteni.
+
+[images/icons/16.png] Placeholder image
+
+* Az elrendezés vezérlőn belül lehet törölni a kijelölt asztalt.
+
+[images/icons/17.png] Placeholder image
+
+* Alapértelmezett képfájl, amit akkor használ a program, ha nem tud egy egy képerőforráshoz beolvasni annak a képét.
+
+[images/icons/default.png] Placeholder image
+
+

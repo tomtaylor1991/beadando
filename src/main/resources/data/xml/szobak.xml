@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<helysegek>
+    <helyseg id="1">
+        <nev>Hall</nev>
+        <meret_x>8</meret_x>
+        <meret_y>7</meret_y>
+        <leiras>Ez a hall az épületben.</leiras>
+    </helyseg>
+    <helyseg id="2">
+        <nev>Fő Szárny</nev>
+        <meret_x>20</meret_x>
+        <meret_y>30</meret_y>
+        <leiras>Ez a fő szárny az étteremben</leiras>
+    </helyseg>
+    <helyseg id="3">
+        <nev>Boros Pince</nev>
+        <meret_x>10</meret_x>
+        <meret_y>10</meret_y>
+        <leiras>-</leiras>
+    </helyseg>
+    <helyseg id="4">
+        <nev>Terasz</nev>
+        <meret_x>3</meret_x>
+        <meret_y>3</meret_y>
+        <leiras>-</leiras>
+    </helyseg>
+</helysegek>
