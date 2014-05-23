@@ -1,1 +1,0 @@
-install:install-file -Dfile=src\main\resources\ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc -Dversion=14 -Dpackaging=jar 
