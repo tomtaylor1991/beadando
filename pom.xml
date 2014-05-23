@@ -22,6 +22,10 @@
 			</roles>
 		</developer>
 	</developers>
+	<organization>
+		<name>Debreceni Egyetem - Informatika Kar</name>
+		<url>http://w1.inf.unideb.hu/</url>
+	</organization>	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -133,8 +137,4 @@
 			</plugin>
 		</plugins>
 	</reporting>
-	<organization>
-		<name>Debreceni Egyetem - Informatika Kar</name>
-		<url>http://w1.inf.unideb.hu/</url>
-	</organization>
 </project>

@@ -174,7 +174,7 @@ public class EteltHozzaad extends MyFrame{
         eteltTorol.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e)
             {
-            	System.out.println(kosarList.getSelectedIndex());
+            	//System.out.println(kosarList.getSelectedIndex());
             	kosarEtelLista.remove(kosarList.getSelectedValue());
             	addKosar(null);
             }
