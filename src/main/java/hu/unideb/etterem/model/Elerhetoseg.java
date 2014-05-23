@@ -1,7 +1,7 @@
 package hu.unideb.etterem.model;
 
 /**
- * Az osztály reprezentál egy elérhetőségét egy személynek.
+ * Az osztály reprezentálja az elérhetőségét egy {@code Szemely}-nek.
  * 
  * @author Szabo Tamas
  *
@@ -9,26 +9,26 @@ package hu.unideb.etterem.model;
 public class Elerhetoseg {
 	
 	/**
-	 * Az elérhetőség által tárolt email cím.
+	 * Az {@code Elerhetoseg} által tárolt e-mail cím.
 	 */
 	public String email;
 	
 	/**
-	 * Az elérhetőség által tárolt mobil telefonszám.
+	 * Az {@code Elerhetoseg} által tárolt mobil telefonszám.
 	 */
 	public String mobil;
 	
 	/**
-	 * Az elérhetőség által tárolt cím.
+	 * Az {@code Elerhetoseg}  által tárolt {@code Cim}.
 	 */
 	public Cim cim;
 	
 	/**
 	 * Konstruktor {@code Elerhetoseg} objektum példányosításához.
 	 * 
-	 * @param cim elérhetőség által tárolt email cím
-	 * @param email elérhetőség által tárolt mobil telefonszám
-	 * @param mobil elérhetőség által tárolt cím
+	 * @param cim az {@code Elerhetoseg}  által tárolni kívánt email cím
+	 * @param email az {@code Elerhetoseg}  által tárolni kívánt mobil telefonszám
+	 * @param mobil az {@code Elerhetoseg}  által tárolni kívánt {@code Cim}
 	 */
 	public Elerhetoseg(Cim cim, String email, String mobil) {
 		this.email = email;
@@ -44,9 +44,9 @@ public class Elerhetoseg {
 	}
 
 	/**
-	 * Visszaadja az Elerhetoseg String reprezentációját.
+	 * Visszaadja az {@code Elerhetoseg} String reprezentációját.
 	 * 
-	 * @return az Elerhetoseg String reprezentációja
+	 * @return az {@code Elerhetoseg} String reprezentációja
 	 * */
 	@Override
 	public String toString() {

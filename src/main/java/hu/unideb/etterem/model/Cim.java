@@ -9,22 +9,22 @@ package hu.unideb.etterem.model;
 public class Cim {
 	
 	/**
-	 *A címhez tartozó ország. 
+	 *A {@code Cim}-hez tartozó ország. 
 	 */
 	public String orszag;
 	
 	/**
-	 * A címhez tartozó város.
+	 * A {@code Cim}-hez  tartozó város.
 	 */
 	public String varos;
 	
 	/**
-	 *A címhez tartozó utca név. 
+	 *A {@code Cim}-hez  tartozó utca név. 
 	 */
 	public String utca;
 	
 	/**
-	 *A címhez tartozó házszám. 
+	 *A {@code Cim}-hez  tartozó házszám. 
 	 */
 	public int hazSzam;
 	

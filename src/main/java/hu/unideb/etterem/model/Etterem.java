@@ -9,7 +9,7 @@ import java.util.List;
 
 
 /**
- *  Az osztály reprezentál egy éttermet.
+ *  Az osztály reprezentál egy éttermet, amelynek vannak szobái amiket tárolni tud.
  * 
  * @author Szabo Tamas
  *
@@ -17,12 +17,12 @@ import java.util.List;
 public class Etterem {
 	
 	/**
-	 * Az étteremhez tartozó azonosító dokumentumok és elérhetőségei.
+	 * Az {@code Etterem}-hez tartozó azonosító dokumentumok és elérhetőségei.
 	 */
 	public Nevjegy nevjegy = new Nevjegy();
 	
 	/**
-	 *Az étteremhez tartozó szobák. 
+	 *Az {@code Etterem}-hez tartozó {@code Szoba}-k. 
 	 */
 	private List<Szoba> szobak;
 	
@@ -34,9 +34,9 @@ public class Etterem {
 	}
 	
 	/**
-	 * Hozzáad az étteremhez egy új szobát.
+	 * Hozzáad az {@code Etterem}-hez egy új {@code Szoba}-t.
 	 * 
-	 * @param szoba étterem egy új szobája.
+	 * @param szoba {@code Etterem} egy új {@code Szoba}-ja.
 	 */
 	public void addSzoba(Szoba szoba){
 		if(szoba != null)
@@ -45,10 +45,10 @@ public class Etterem {
 	
 
 	/**
-	 * Visszaad egy, az étteremben lévő szobát.
-	 * @param szobaNev az étterem egyik szobájának neve
-	 * @return egy étteremben lévő szoba
-	 * @throws NincsIlyenHelysegException ha nincs az étteremben a megadott névvel megeggyező nevű szoba 
+	 * Visszaad egy, az {@code Etterem}-ben lévő {@code Szoba}-t.
+	 * @param szobaNev az {@code Etterem} egyik {@code Szoba}-jának neve
+	 * @return egy {@code Etterem}-ben lévő {@code Szoba}
+	 * @throws NincsIlyenHelysegException ha nincs az {@code Etterem}-ben a megadott névvel megeggyező nevű {@code Szoba} 
 	 */
 	public Szoba getSzoba(String szobaNev) throws NincsIlyenHelysegException{
 		for(Szoba szoba: szobak)
@@ -58,9 +58,9 @@ public class Etterem {
 	}
 
 	/**
-	 * Visszaadja String Listába szedve az étteremben található összes szoba nevét.
+	 * Visszaadja String Listába szedve az {@code Etterem}-ben található összes {@code Szoba} nevét.
 	 * 
-	 * @return String Listába szedve az étteremben található összes szoba neve
+	 * @return String Listába szedve az {@code Etterem}-ben található összes {@code Szoba} neve
 	 */
 	public List<String> getSzobaNevek() {
 		List<String> ret=new LinkedList<String>();
@@ -71,10 +71,10 @@ public class Etterem {
 	
 
 	/**
-	 * Visszaadja egy szoba nevét az etteremben, amelyik id-ja megegyezik a paraméterül kapott id-val.
+	 * Visszaadja egy {@code Szoba} nevét az etteremben, amelyik id-ja megegyezik a paraméterül kapott id-val.
 	 * 
-	 * @param id melyik id -val rendelkező szoba nevét akarjuk lekérdezni
-	 * @return egy szoba neve az etteremben ha létező szobanév, különben null -t ad vissza
+	 * @param id melyik id -val rendelkező {@code Szoba} nevét akarjuk lekérdezni
+	 * @return egy szoba neve az {@code Etterem}-ben ha létező {@code Szoba-}név, különben {@code null}-t ad vissza
 	 */
 	public String getSzobaNevById(int id) {
 		for(Szoba szoba: szobak) {
@@ -92,9 +92,9 @@ public class Etterem {
 
 
 	/**
-	 * Visszaadja az étteremben lévő szobák referenciáit Listában.
+	 * Visszaadja az {@code Etterem}-ben lévő {@code Szoba}-k referenciáit Listában.
 	 * 
-	 * @return az étteremben elhelyezkedő szobák
+	 * @return az {@code Etterem}-ben elhelyezkedő {@code Szoba}-k
 	 */
 	public List<Szoba> getSzobak() {
 		return szobak;
@@ -103,9 +103,9 @@ public class Etterem {
 
 
 	/**
-	 * Visszaadja az étterem String reprezentációját.
+	 * Visszaadja az {@code Etterem} String reprezentációját.
 	 * 
-	 * @return az étterem String reprezentációja, névjegy, szobák
+	 * @return az {@code Etterem} String reprezentációja
 	 */
 	public String toString() {
 		return "Etterem [nevjegy=" + nevjegy + ", szobak=" + szobak + "]";

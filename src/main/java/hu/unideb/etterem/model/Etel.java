@@ -3,7 +3,7 @@ package hu.unideb.etterem.model;
 import hu.unideb.etterem.model.interfaces.Vasarolhato;
 
 /**
- * Az osztály reprezentál egy Étel terméket amelyet {@code Vasarolhato}.
+ * Az osztály reprezentál egy Étel terméket amelyet meg lehet vásárolni.
  * 
  * @author Szabo Tamas
  *
@@ -28,9 +28,9 @@ public class Etel implements Vasarolhato{
 	/**
 	 * Konstruktor {@code Etel} objektum példányosításához.
 	 * 
-	 * @param nev az Étel neve
-	 * @param ar az Étel ára
-	 * @param leiras az Étel rövid leírása, pl.: mit tartalmaz
+	 * @param nev az {@code Etel} neve
+	 * @param ar az {@code Etel} ára
+	 * @param leiras az {@code Etel} rövid leírása, pl.: mit tartalmaz
 	 */
 	public Etel( String nev, int ar, String leiras) {
 		this.ar = ar;
@@ -57,8 +57,8 @@ public class Etel implements Vasarolhato{
 	}
 
 	/**
-	 * Beállítja az Étel árát.
-	 * @param ar az Étel ára
+	 * Beállítja az {@code Etel} árát.
+	 * @param ar az {@code Etel} ára
 	 */
 	public void setAr(int ar) {
 		this.ar = ar;
@@ -74,35 +74,35 @@ public class Etel implements Vasarolhato{
 	}
 
 	/**
-	 * Beállítja az Étel elnevezését.
-	 * @param nev az Étel neve
+	 * Beállítja az {@code Etel} elnevezését.
+	 * @param nev az {@code Etel} neve
 	 */
 	public void setNev(String nev) {
 		this.nev = nev;
 	}
 
 	/**
-	 * Visszaadja az Étel rövid leírását.
+	 * Visszaadja az {@code Etel} rövid leírását.
 	 * 
-	 * @return az Étel rövid leírása
+	 * @return az {@code Etel} rövid leírása
 	 */
 	public String getLeiras() {
 		return leiras;
 	}
 
 	/**
-	 * Beállítja az Étel rövid leírását.
+	 * Beállítja az {@code Etel} rövid leírását.
 	 * 
-	 * @param leiras az Étel rövid leírása
+	 * @param leiras az {@code Etel} rövid leírása
 	 */
 	public void setLeiras(String leiras) {
 		this.leiras = leiras;
 	}
 
 	/**
-	 * Visszaadja az objektum hash kódját.
+	 * Visszaadja az objektum Hash kódját.
 	 *
-	 * @return az objektum hash kivonata
+	 * @return az objektum Hash kivonata
 	 */
 	@Override
 	public int hashCode() {
@@ -115,7 +115,7 @@ public class Etel implements Vasarolhato{
 	}
 
 	/**
-	 * Összehasonlít két Ételt, hogy egyenlőek -e. Két {@code Etel} objektumot egyenlőnek tekintünk,
+	 * Összehasonlít két {@code Etel}-t, hogy egyenlőek -e. Két {@code Etel} objektumot egyenlőnek tekintünk,
 	 * ha megegyezik a nevüt, leírásuk és az áruk.
 	 *
 	 * @param obj az objektum amellyel össze szeretnénk hasonlítani
@@ -146,9 +146,9 @@ public class Etel implements Vasarolhato{
 	}
 
 	/**
-	 * Visszaadja az Étel String reprezentációját.
+	 * Visszaadja az {@code Etel} String reprezentációját.
 	 * 
-	 * @return az Étel String reprezentációja
+	 * @return az {@code Etel} String reprezentációja
 	 * */
 	@Override
 	public String toString() {

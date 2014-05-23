@@ -7,7 +7,7 @@ import hu.unideb.etterem.model.exceptions.NincsIlyenHelysegException;
 
 
 /**
- * Az osztály feladata egy étterem elrendezéseinek vezérlése.
+ * Az osztály feladata egy {@code Etterem} elrendezéseinek vezérlése.
  * 
  * @author Szabo Tamas
  *
@@ -15,34 +15,34 @@ import hu.unideb.etterem.model.exceptions.NincsIlyenHelysegException;
 public class ElrendezesVezerlo {
 	
 	/**
-	 * Az étterem amelynek berendezéseit ezen osztályon keresztül el lehet érni. 
+	 * Az {@code Etterem} amelynek berendezéseit ezen osztályon keresztül el lehet érni. 
 	 */
 	private Etterem etterem;
 
 	/**
 	 * Konstruktor {@code ElrendezesVezerlo} objektum példányosításához.
 	 * 
-	 * @param etterem étterem amelynek berendezéseit ezen osztályon keresztül el lehet majd érni
+	 * @param etterem {@code Etterem} amelynek berendezéseit ezen osztályon keresztül el lehet majd érni
 	 */
 	public ElrendezesVezerlo(Etterem etterem) {
 		this.etterem = etterem;
 	}
 
 	/**
-	 * Visszaadja az elrendezés vezérlő által használt éttermet.
+	 * Visszaadja az elrendezés vezérlő által használt {@code Ettermet}.
 	 * 
-	 * @return az elrendezés vezérlő által használt étterm
+	 * @return az elrendezés vezérlő által használt {@code Etterem}
 	 */
 	public Etterem getEtterem() {
 		return etterem;
 	}
 
 	/**
-	 * Megkeresi az adott szobát és hozzáad egy új asztalt.
+	 * Megkeresi az adott {@code Szoba}-t és hozzáad egy új {@code Asztal}-t.
 	 * 
-	 * @param szobaNev melyik szobábahoz adjon asztalt
-	 * @param pozicio milyen pozícióra tegye az asztalt
-	 * @param szekSzam hány szék tartozzon az asztalhoz
+	 * @param szobaNev melyik {@code Szoba}-hoz adjon {@code Asztal}-t
+	 * @param pozicio milyen {@code Pozicio}-ra tegye az {@code Asztal}-t
+	 * @param szekSzam hány szék tartozzon az {@code Asztal}-hoz
 	 */
 	public void addUjAsztalSzobahoz(String szobaNev, Pozicio pozicio, int szekSzam){
 		try {
@@ -64,9 +64,9 @@ public class ElrendezesVezerlo {
 
 	
 	/**
-	 * Visszaad egy eddig még nem használt egyedi asztal azonosítót.
+	 * Visszaad egy eddig még nem használt egyedi {@code Asztal} azonosítót.
 	 *  
-	 * @return eddig még nem használt egyedi asztal azonosító
+	 * @return eddig még nem használt egyedi {@code Asztal} azonosító
 	 */
 	public int getKovetkezoAsztalID(){
 		int max = 0;
@@ -79,12 +79,12 @@ public class ElrendezesVezerlo {
 	
 	
 	/**
-	 * Visszaad egy asztalt az étterem adott szobájából, adott pozíciójában.
-	 * @param szobaNev melyik szobában van a keresett asztal
-	 * @param pozicio melyik pozícióban van a keresett asztal
-	 * @return egy asztalt az étterem adott szobájából, adott pozíciójában, ha létezik ilyen asztal
-	 * @throws NincsIlyenHelysegException ha nem létezik szobaNev -el megegyező szoba
-	 * @throws NincsIlyenAsztalException ha nincs az adott szobában adott pozíción asztal
+	 * Visszaad egy {@code Asztal}-t az étterem adott {@code Szoba}-jából, adott {@code Pozicio}-jában.
+	 * @param szobaNev melyik {@code Szoba}-ban van a keresett {@code Asztal}
+	 * @param pozicio melyik {@code Pozicio}-jában van a keresett {@code Asztal}
+	 * @return egy asztalt az {@code Etterem} adott {@code Szoba}-jából, adott @code Pozicio}-jában, ha létezik ilyen {@code Asztal}
+	 * @throws NincsIlyenHelysegException ha nem létezik szobaNev -el megegyező {@code Szoba}
+	 * @throws NincsIlyenAsztalException ha nincs az adott szobában adott pozíción {@code Asztal}
 	 */
 	public Asztal getAsztal(String szobaNev, Pozicio pozicio) throws NincsIlyenHelysegException, NincsIlyenAsztalException{
 		Szoba szoba=etterem.getSzoba(szobaNev);
@@ -97,10 +97,10 @@ public class ElrendezesVezerlo {
 
 
 	/**
-	 * Törli adott szoba adott pozícióján lévő asztalt feltéve, hogy az az asztal létezik.
+	 * Törli adott {@code Szoba} adott {@code Pozicio}-jában lévő asztalt feltéve, hogy az az {@code Asztal} létezik.
 	 * 
-	 * @param szobaNev melyik szobában van a keresett asztal
-	 * @param pozicio melyik pozícióban van a keresett asztal
+	 * @param szobaNev melyik {@code Szoba} van a keresett {@code Asztal}
+	 * @param pozicio melyik {@code Pozicio}-jában  van a keresett {@code Asztal}
 	 */
 	public void torolAsztal(String szobaNev, Pozicio pozicio){
 		try {
@@ -113,9 +113,9 @@ public class ElrendezesVezerlo {
 	}
 	
 	/**
-	 * Törli egy adott nevű szobát az étteremből.
+	 * Törli egy adott nevű {@code Szoba}-t az {@code Etterem}-ből.
 	 * 
-	 * @param szobaNev a neve a szobának amelyet törölni kell
+	 * @param szobaNev a neve a {@code Szoba}-nak amelyet törölni kell
 	 */
 	public void torolSzoba(String szobaNev){
 			Szoba szoba;

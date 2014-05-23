@@ -51,6 +51,7 @@ public class Main {
             }
         });
 
+      //LOG
 		Log.logger.info("Elindult a program grafikus felülettel.");
 		
 	}
