@@ -11,26 +11,26 @@ import hu.unideb.etterem.model.interfaces.SzamlazasiFelelos;
 public class Szemely  implements SzamlazasiFelelos{
 	
 	/**
-	 * A személy neve.
+	 * A {@code Szemely} neve.
 	 */
 	private String nev;
 	
 	/**
-	 * A személy lakcíme.
+	 * A {@code Szemely} lakcíme.
 	 */
 	private String cim;
 	
 	/**
-	 * A személy számlaszáma.
+	 * A {@code Szemely} számlaszáma.
 	 */
 	private String szamlaSzam;
 	
 	/**
 	 * Konstruktor {@code Szemely} objektum példányosításához.
 	 * 
-	 * @param nev a személy neve
-	 * @param cim a személy címe
-	 * @param szamlaSzam a személy számlaszáma
+	 * @param nev a {@code Szemely} neve
+	 * @param cim a {@code Szemely} címe
+	 * @param szamlaSzam a {@code Szemely} számlaszáma
 	 */
 	public Szemely(String nev, String cim, String szamlaSzam) {
 		this.nev = nev;
@@ -66,9 +66,9 @@ public class Szemely  implements SzamlazasiFelelos{
 	}
 
 	/**
-	 * Visszaadja a személy String reprezentációját.
+	 * Visszaadja a {@code Szemely} String reprezentációját.
 	 * 
-	 * @return a személy String reprezentációja
+	 * @return a {@code Szemely} String reprezentációja
 	 */
 	public String toString() {
 		return "Szemely [Szamlazasi nev=" + nev + ", cim=" + cim + ", szamlaSzam="

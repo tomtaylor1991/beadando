@@ -17,7 +17,7 @@ import java.util.Set;
 public class Menu {
 	
 	/**
-	 * Hash tábla amely tárol kategóriák és hozzá tartozó ételek listáját.
+	 * Hash tábla amely tárol kategóriákat és hozzájuk tartozó {@code Etel}-ek listáját.
 	 */
 	private Map< String, List<Etel> > menu;
 
@@ -38,11 +38,11 @@ public class Menu {
 	}
 
 	/**
-	 * Hozzáad a menü adott kategóriájához adott ételt, 
+	 * Hozzáad a {@code Menu} adott kategóriájához adott {@code Etel}-t, 
 	 * ha még nincs olyan kategória, akkor azt is létrehoz előtte.
 	 * 
-	 * @param kategoria melyik kategóriához kell ételt hozzáadni
-	 * @param etel melyik ételt adja hozzá a menühöz
+	 * @param kategoria melyik kategóriához kell {@code Etel}-t hozzáadni
+	 * @param etel melyik {@code Etel}-t adja hozzá a {@code Menu}-höz
 	 */
 	public void addEtel(String kategoria, Etel etel){
 		if(menu.containsKey(kategoria)){
@@ -59,19 +59,19 @@ public class Menu {
 	}
 
 	/**
-	 * Visszaaja a teljes menüt.
+	 * Visszaaja a teljes {@code Menu}-t.
 	 * 
-	 * @return  Hash tábla amely tárol kategóriákat és hozzá tartozó ételek listáját
+	 * @return  Hash tábla amely tárol kategóriákat és hozzájuk tartozó {@code Etel}-ek listáját
 	 */
 	public Map<String, List<Etel>> getMenu() {
 		return menu;
 	}
 	
 	/**
-	 * Visszaadja egy kategóriához tartozó összes ételt.
+	 * Visszaadja egy kategóriához tartozó összes {@code Etelt}-t.
 	 * 
-	 * @param kategoria melyik kategória ételeit adja vissza
-	 * @return <code>List<Etel></code> ha adott kategória összes étele ha létezik ilyen nevű kateória, 
+	 * @param kategoria melyik kategória {@code Etelt}-eit adja vissza
+	 * @return <code>List<Etel></code> ha adott kategória összes {@code Etel} ha létezik ilyen nevű kateória, 
 	 * 		<code>null</code> különben
 	 */
 	public List<Etel> getEtelek(String kategoria){
@@ -109,9 +109,9 @@ public class Menu {
 	}
 	
 	/**
-	 * Visszaadja a Menu String reprezentációját.
+	 * Visszaadja a {@code Menu} String reprezentációját.
 	 * 
-	 * @return a Menu String reprezentációja
+	 * @return a {@code Menu} String reprezentációja
 	 * */
 	@Override
 	public String toString() {

@@ -9,20 +9,20 @@ package hu.unideb.etterem.model;
 public class Pozicio {
 	
 	/**
-	 * A Pozíció X koordinátája.
+	 * A {@code Pozicio} X koordinátája.
 	 */
 	private int x;
 	
 	/**
-	 * A Pozíció Y koordinátája.
+	 * A {@code Pozicio} Y koordinátája.
 	 */
 	private int y;
 	
 	/**
 	 * Konstruktor {@code Pozicio} objektum példányosításához.
 	 * 
-	 * @param x a Pozíció X koordinátája
-	 * @param y a Pozíció Y koordinátája
+	 * @param x a {@code Pozicio} X koordinátája
+	 * @param y a {@code Pozicio} Y koordinátája
 	 */
 	public Pozicio(int x, int y) {
 		this.x = x;
@@ -30,16 +30,16 @@ public class Pozicio {
 	}
 	
 	/**
-	 * Visszaadja a Pozíció X koordinátáját.
-	 * @return a Pozíció X koordinátája
+	 * Visszaadja a {@code Pozicio} X koordinátáját.
+	 * @return a {@code Pozicio} X koordinátája
 	 */
 	public int getX() {
 		return x;
 	}
 
 	/**
-	 * Visszaadja a Pozíció Y koordinátáját.
-	 * @return a Pozíció Y koordinátája
+	 * Visszaadja a {@code Pozicio} Y koordinátáját.
+	 * @return a {@code Pozicio} Y koordinátája
 	 */
 	public int getY() {
 		return y;
@@ -83,9 +83,9 @@ public class Pozicio {
 	}
 	
 	/**
-	 * Visszaadja az Pozíció String reprezentációját.
+	 * Visszaadja az {@code Pozicio} String reprezentációját.
 	 * 
-	 * @return az Pozíció String reprezentációja
+	 * @return az {@code Pozicio} String reprezentációja
 	 * */
 	@Override
 	public String toString() {

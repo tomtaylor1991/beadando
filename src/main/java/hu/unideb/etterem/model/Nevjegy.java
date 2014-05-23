@@ -8,29 +8,29 @@ package hu.unideb.etterem.model;
  */
 public class Nevjegy {
 	/**
-	 * A névjegyhez tartozó név.
+	 * A {@code Nevjegy}-hez tartozó név.
 	 */
 	public String nev;
 	
 	/**
-	 * Az étterem nyitvatartása. 
+	 * Az {@code Etterem} nyitvatartása. 
 	 */
 	public String nyitvaTartas;
 	
 	/**
-	 * Az étterem rövid leírása.
+	 * Az {@code Etterem} rövid leírása.
 	 */
 	public String leiras;
 	
 	/**
-	 * Az étterem elérhetőségei. 
+	 * Az {@code Etterem} elérhetőségei. 
 	 */
 	public Elerhetoseg elerhetoseg;
 	
 	/**
-	 * Visszaadja a névjegy String reprezentációját.
+	 * Visszaadja a {@code Nevjegy} String reprezentációját.
 	 * 
-	 * @return a névjegy String reprezentációja
+	 * @return a {@code Nevjegy} String reprezentációja
 	 */
 	public String toString() {
 		return "Nevjegy [nev=" + nev + ", nyitvaTartas=" + nyitvaTartas

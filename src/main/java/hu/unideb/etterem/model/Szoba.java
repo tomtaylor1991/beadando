@@ -52,11 +52,11 @@ public class Szoba {
 	/**
 	 * Konstruktor {@code Szoba} objektum példányosításához.
 	 * 
-	 * @param szobaID a szoba egyedi azonosítója
-	 * @param szobaNev a szoba neve
-	 * @param meretX  a szoba egységnyi hossza
-	 * @param meretY a szoba egységnyi magassága
-	 * @param leiras a szoba egységnyi leírása
+	 * @param szobaID a {@code Szoba} egyedi azonosítója
+	 * @param szobaNev a {@code Szoba} neve
+	 * @param meretX  a {@code Szoba} egységnyi hossza
+	 * @param meretY a {@code Szoba} egységnyi magassága
+	 * @param leiras a {@code Szoba} egységnyi leírása
 	 */
 	public Szoba(int szobaID, String szobaNev, int meretX, int meretY, String leiras) {
 		this.szobaID = szobaID;
@@ -80,10 +80,10 @@ public class Szoba {
 	}
 	
 	/**
-	 * Visszaadja, hogy az adott pozíció a szoba méret korlátain belül van -e.
+	 * Visszaadja, hogy az adott {@code Pozicio} a {@code Szoba} méret korlátain belül van -e.
 	 * 
 	 * @param poz a keresett pozíció
-	 * @return <code>true</code> ha a pozíció a szobában van, <code>false</code> különben
+	 * @return <code>true</code> ha a @code Pozicio} a {@code Szoba}-ban van, <code>false</code> különben
 	 */
 	private boolean isBelefer(Pozicio poz){
 		if(this.meretX>=poz.getX() && this.meretY>=poz.getY())
@@ -92,11 +92,12 @@ public class Szoba {
 	}
 	
 	/**
-	 * Hozzáad a szobához egy új asztalt az adott pozíción, ha már volt ott asztal, akkor azt lecseréli. 
+	 * Hozzáad a {@code Szoba}-hoz egy új {@code Asztal}-t az adott {@code Pozicio}-n, 
+	 * ha már volt ott {@code Asztal}, akkor azt lecseréli. 
 	 * 
-	 * @param ujAsztal az asztal amelyiket a szobához kell adni
-	 * @param ujPozicio a pozíció amelyen legyen az új asztal
-	 * @throws NemFerBeAHelysegbeException ha a szobában a pozíció nem létezik
+	 * @param ujAsztal az {@code Asztal} amelyiket a {@code Szoba}-hoz kell adni
+	 * @param ujPozicio a {@code Pozicio} amelyen legyen az új {@code Asztal}
+	 * @throws NemFerBeAHelysegbeException ha a {@code Szoba}-ban a {@code Pozicio} nem létezik
 	 */
 	public void addAsztal(Asztal ujAsztal, Pozicio ujPozicio) throws NemFerBeAHelysegbeException{
 		
@@ -119,28 +120,28 @@ public class Szoba {
 	
 	
 	/**
-	 * Visszaadja a szobában lévő asztalok pozícióinak halmazát.
+	 * Visszaadja a {@code Szoba}-ban lévő {@code Asztal}-ok pozícióinak halmazát.
 	 * 
-	 * @return a szobában lévő asztalok pozícióinak halmaza
+	 * @return a {@code Szoba}-ban lévő {@code Asztal}-ok pozícióinak halmaza
 	 */
 	public Set<Pozicio> getPoziciok(){
 		return asztalok.keySet();
 	}
 	
 	/**
-	 * Visszaadja a szobában lévő asztalok referenciáinak listáját.
+	 * Visszaadja a {@code Szoba}-ban lévő {@code Asztal}-ok referenciáinak listáját.
 	 * 
-	 * @return a szobában lévő asztalok referenciáinak listája
+	 * @return a {@code Szoba}-ban lévő {@code Asztal}-ok referenciáinak listája
 	 */
 	public List<Asztal> getAsztalLista() {
 		return new LinkedList<Asztal>(asztalok.values());
 	}
 
 	/**
-	 * Visszaadja a szobában lévő asztalok referenciáinak listáját amelyeknél elég ülő hely van.
+	 * Visszaadja a {@code Szoba}-ban lévő {@code Asztal}-ok referenciáinak listáját amelyeknél elég ülő hely van.
 	 * 
-	 * @param minHely korlát, hogy legalább ennyi szabad helley rendelkeznie kell az asztalnak
-	 * @return a szobában lévő asztalok referenciáinak listáját amelyeknél elég ülő hely van
+	 * @param minHely korlát, hogy legalább ennyi szabad hellyel rendelkeznie kell az {@code Asztal}-nak
+	 * @return a {@code Szoba}-ban lévő {@code Asztal}-ok referenciáinak listáját amelyeknél elég ülő hely van
 	 */
 	public List<Asztal> getLehtesegesJoAsztalok(int minHely){
 		List<Asztal> ret=new LinkedList<Asztal>();
@@ -152,10 +153,11 @@ public class Szoba {
 	}
 	
 	/**
-	 * Visszaadja a szobában lévő asztalok pozícióinak listáját amelyeknél elég ülő hely van.
+	 * Visszaadja a {@code Szoba}-ban lévő {@code Asztal}-ok {@code Pozicio}-jának
+	 *  listáját amelyeknél elég ülő hely van.
 	 * 
-	 * @param minHely korlát, hogy legalább ennyi szabad helley rendelkeznie kell az asztalnak
-	 * @return a szobában lévő asztalok pozícióinak listáját amelyeknél elég ülő hely van
+	 * @param minHely korlát, hogy legalább ennyi szabad hellyel rendelkeznie kell az {@code Asztal}-nak
+	 * @return a {@code Szoba}-ban lévő {@code Asztal}-ok {@code Pozicio}-jának listája amelyeknél elég ülő hely van
 	 */
 	public Set<Pozicio> getLehtesegesJoAsztalPoziciok(int minHely){
 		List<Asztal> lehetsegesAsztalok = getLehtesegesJoAsztalok( minHely );
@@ -169,9 +171,9 @@ public class Szoba {
 	}
 	
 	/**
-	 * Visszaadja a szobában lévő asztalok egyedi azonosítóinak listáját.
+	 * Visszaadja a {@code Szoba}-ban lévő {@code Asztal}-ok egyedi azonosítóinak listáját.
 	 * 
-	 * @return a szobában lévő asztalok egyedi azonosítóinak listája
+	 * @return a {@code Szoba}-ban lévő {@code Asztal}-ok egyedi azonosítóinak listája
 	 */
 	public List<Integer> getIdList(){
 		List<Integer> ret= new LinkedList<Integer>();
@@ -183,10 +185,12 @@ public class Szoba {
 	}
 	
 	/**
-	 * Visszaadja a szobából azt az asztalt, amelynek id-ja megyezeik a paraméterként kapott id-val.
+	 * Visszaadja a {@code Szoba}-ból azt az {@code Asztal}-t, 
+	 * amelynek id-ja megyezeik a paraméterként kapott id-val.
 	 * 
-	 * @param id melyik azonosítójú asztalt keressük
-	 * @return Asztal, amelyiknek id-ja megyezeik a paraméterként kapott id-val, ha nincs ilyen asztal, null -al tér vissza
+	 * @param id melyik azonosítójú {@code Asztal}-t keressük
+	 * @return {@code Asztal}, amelyiknek id-ja megyezeik a paraméterként kapott id-val, 
+	 * ha nincs ilyen asztal, {@code null}-al tér vissza
 	 */
 	public Asztal getFoglalhatoById(int id){
 		for( Asztal aktualis: getAsztalLista() ){
@@ -201,20 +205,21 @@ public class Szoba {
 	}
 	
 	/**
-	 * Visszaadja, hogy létezik -e a szobában adott id-vel rendelkező asztal.
+	 * Visszaadja, hogy létezik -e a {@code Szoba}-ban adott id-vel rendelkező {@code Asztal}.
 	 * 
-	 * @param id a keresett asztal id -ja
-	 * @return <code>true</code> ha létezik ilyen id-vel rendelkező asztal a szobában, <code>false</code> különben
+	 * @param id a keresett {@code Asztal} id -ja
+	 * @return <code>true</code> ha létezik ilyen id-vel rendelkező {@code Asztal} a {@code Szoba}-ban, 
+	 * <code>false</code> különben
 	 */
 	public Boolean letezoId(int id){
 		return getIdList().contains(id);
 	}
 	
 	/**
-	 * Visszaadja a szobában lévő asztalt id -ja alapján, milyen pozíción van az asztal.
+	 * Visszaadja a {@code Szoba}-ban lévő {@code Asztal}-t id -ja alapján, milyen {@code Pozicio}-n van az {@code Asztal}.
 	 * 
-	 * @param id a keresett asztal id -ja
-	 * @return a keresett asztal pozíciója, ha létezik ilyen id -jű asztal, null különben
+	 * @param id a keresett {@code Asztal} id -ja
+	 * @return a keresett {@code Asztal} {@code Pozicio}-ja, ha létezik ilyen id -jű asztal, null különben
 	 */
 	public Pozicio getPozicioById(int id){
 		for( Pozicio poz: getPoziciok() ){
@@ -232,90 +237,90 @@ public class Szoba {
 	
 	
 	/**
-	 * Visszaadja a szoba egységnyi hosszát.
+	 * Visszaadja a {@code Szoba} egységnyi hosszát.
 	 * 
-	 * @return a szoba egységnyi hossza
+	 * @return a {@code Szoba} egységnyi hossza
 	 */
 	public int getMeretX() {
 		return meretX;
 	}
 
 	/**
-	 * Beállítja a szoba egységnyi hosszát.
+	 * Beállítja a {@code Szoba} egységnyi hosszát.
 	 * 
-	 * @param meretX a szoba egységnyi hossza
+	 * @param meretX a {@code Szoba} egységnyi hossza
 	 */
 	public void setMeretX(int meretX) {
 		this.meretX = meretX;
 	}
 
 	/**
-	 * Visszaadja a szoba egységnyi magasságát.
+	 * Visszaadja a {@code Szoba} egységnyi magasságát.
 	 * 
-	 * @return a szoba egységnyi magassága
+	 * @return a {@code Szoba} egységnyi magassága
 	 */
 	public int getMeretY() {
 		return meretY;
 	}
 
 	/**
-	 * Beállítja a szoba egységnyi magasságát.
+	 * Beállítja a {@code Szoba} egységnyi magasságát.
 	 * 
-	 * @param meretY a szoba egységnyi magassága
+	 * @param meretY a {@code Szoba} egységnyi magassága
 	 */
 	public void setMeretY(int meretY) {
 		this.meretY = meretY;
 	}
 
 	/**
-	 * Visszaadja a szoba id-ját.
+	 * Visszaadja a {@code Szoba} id-ját.
 	 * 
-	 * @return a szoba ID -ja
+	 * @return a {@code Szoba} ID -ja
 	 */
 	public int getSzobaID() {
 		return szobaID;
 	}
 
 	/**
-	 * Beállítja a szoba id-ját.
+	 * Beállítja a {@code Szoba} id-ját.
 	 * 
-	 * @param szobaID  a szoba új ID -ja
+	 * @param szobaID a {@code Szoba} új ID -ja
 	 */
 	public void setSzobaID(int szobaID) {
 		this.szobaID = szobaID;
 	}
 
 	/**
-	 * Visszaadja a szoba nevét.
+	 * Visszaadja a {@code Szoba} nevét.
 	 * 
-	 * @return a szoba neve
+	 * @return a {@code Szoba} neve
 	 */
 	public String getSzobaNev() {
 		return szobaNev;
 	}
 
 	/**
-	 * Beállítja a szoba nevét.
+	 * Beállítja a {@code Szoba} nevét.
 	 * 
-	 * @param szobaNev a szoba új neve
+	 * @param szobaNev a {@code Szoba} új neve
 	 */
 	public void setSzobaNev(String szobaNev) {
 		this.szobaNev = szobaNev;
 	}
 
 	/**
-	 * Visszaadja a szoba leírását.
+	 * Visszaadja a {@code Szoba} leírását.
 	 * 
-	 * @return  a szoba leírása
+	 * @return  a {@code Szoba} leírása
 	 */
 	public String getLeiras() {
 		return leiras;
 	}
 
 	/**
-	 * Beállítja a szoba leírását.
+	 * Beállítja a {@code Szoba} leírását.
 	 * 
-	 * @param leiras a szoba új leírása
+	 * @param leiras a {@code Szoba} új leírása
 	 */
 	public void setLeiras(String leiras) {
 		this.leiras = leiras;
@@ -324,18 +329,18 @@ public class Szoba {
 
 	
 	/**
-	 * Visszaadja a szoba  asztalait és pozícióit.
+	 * Visszaadja a {@code Szoba}  {@code Asztal} és {@code Pozicio}-it.
 	 * 
-	 * @return  a szoba  asztalai és pozíciói
+	 * @return  a {@code Szoba}  {@code Asztal} és {@code Pozicio}-i
 	 */
 	public Map<Pozicio, Asztal> getAsztalok() {
 		return asztalok;
 	}
 
 	/**
-	 * Visszaadja a Szoba String reprezentációját.
+	 * Visszaadja a {@code Szoba} String reprezentációját.
 	 * 
-	 * @return a Szoba String reprezentációja
+	 * @return a {@code Szoba} String reprezentációja
 	 * */
 	@Override
 	public String toString() {
