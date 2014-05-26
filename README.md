@@ -1,12 +1,13 @@
-Étterem kezelő program implementációja java nyelven. (2014)
+Étterem kezelő program implementációja Java nyelven (2014)
+==========================================================
 
 A Programozási Környezetek és Programozási Technológiák tárgyak követelményeinek teljesítése
 céljából készített Java program ami egy Éttermet mintáz meg. 
 Lehet a programon belül grafikus felületen keresztül: 
 
--szobákat, 
+- szobákat, 
 
--asztalokat definiálni és
+- asztalokat definiálni és
 
 - a vásárlók egyes asztaloknál történő rendeléseit menedzselni.
 
