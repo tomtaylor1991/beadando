@@ -11,9 +11,9 @@ Lehet a programon belül grafikus felületen keresztül:
 
 - a vásárlók egyes asztaloknál történő rendeléseit menedzselni.
 
-A program Apache Maven környezetben készült.
-Adattárolásra használ a program xml, json illetve oracle adatbázis kezelőt.
+A program [Apache Maven](http://maven.apache.org/) környezetben készült.
+Adattárolásra használ a program XML, JSON illetve Oracle adatbázis kezelőt.
 
 Készített: Szabó Tamás,
 Neptun kód: GU1GYP,
-E-mail: tomtaylor1991@gmail.com
+E-mail: <tomtaylor1991@gmail.com>
